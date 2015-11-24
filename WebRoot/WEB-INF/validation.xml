@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form-validation PUBLIC
+          "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN"
+          "http://jakarta.apache.org/commons/dtds/validator_1_1_3.dtd">
+<form-validation>
+	<formset>
+		<form name="LoginForm">
+			<field property="userName" depends="required,maxlength">
+				<arg key="userName.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="userName.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>11</var-value>
+				</var>
+			</field>
+			<field property="userPass" depends="required,maxlength">
+				<arg key="userPass.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="userPass.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>11</var-value>
+				</var>
+			</field>
+		</form>
+	</formset>
+	<formset>
+		<form name="MaterialForm">
+			<field property="maName" depends="required,maxlength">
+				<arg key="maName.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maName.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>20</var-value>
+				</var>
+			</field>
+			<field property="maCode" depends="required,maxlength">
+				<arg key="maCode.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maCode.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>20</var-value>
+				</var>
+			</field>
+			<field property="maBranch" depends="required,maxlength">
+				<arg key="maBranch.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maBranch.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>20</var-value>
+				</var>
+			</field>
+			<field property="maOrigin" depends="required,maxlength">
+				<arg key="maOrigin.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maOrigin.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>20</var-value>
+				</var>
+			</field>
+			<field property="maOtherName" depends="required,maxlength">
+				<arg key="maOtherName.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maOtherName.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>20</var-value>
+				</var>
+			</field>
+			<field property="maFormat" depends="required,maxlength">
+				<arg key="maFormat.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maFormat.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>20</var-value>
+				</var>
+			</field>
+			<field property="maPrice1" depends="required,maxlength">
+				<arg key="maPrice1.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maPrice1.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>8</var-value>
+				</var>
+			</field>
+			<field property="maPrice2" depends="required,maxlength">
+				<arg key="maPrice2.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maPrice2.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>8</var-value>
+				</var>
+			</field>
+			<field property="maBrand" depends="required,maxlength">
+				<arg key="maBrand.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maBrand.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>20</var-value>
+				</var>
+			</field>
+			<field property="maGrade" depends="required,maxlength">
+				<arg key="maGrade.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maGrade.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>20</var-value>
+				</var>
+			</field>
+			<field property="maEffect" depends="required,maxlength">
+				<arg key="maEffect.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maEffect.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>20</var-value>
+				</var>
+			</field>
+			<field property="maEnvironment" depends="required,maxlength">
+				<arg key="maEnvironment.label" />
+				<arg1 key="${var:maxlength}" resource="false" />
+				<arg2 key="maEnvironment.maxlength" />
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>20</var-value>
+				</var>
+			</field>
+		</form>
+	</formset>
+</form-validation>

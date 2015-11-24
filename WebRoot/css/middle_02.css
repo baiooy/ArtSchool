@@ -1,0 +1,221 @@
+@CHARSET "UTF-8";
+
+.pagination_01 {
+	background-repeat: no-repeat;
+
+}
+.review{
+	position:absolute; left:39px; top:55px; width:684px; height:159px; z-index:1;
+
+}
+.review_01 {
+	background-color: #FAFCFB;
+}
+
+.review_02 {
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #BEBEBE;
+	border-left-color: #CCCCCC;
+}
+
+.pagination_01 {
+	background-color: #F2F6F7;
+}
+
+.font_01 {
+	color: #666666;
+	font-size: 13px;
+	
+}
+.font_02 {
+	font-weight: bold;
+	color: #EE0078;
+	
+}
+.font_03 {
+	color: #008300;
+}
+.font_04 {
+	color: #1E58C6;
+}
+.periphery {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #BEBEBE;
+	border-left-color: #CCCCCC;
+	
+	left:20%;
+}
+.periphery_01 {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #CCCCCC;
+	color: #686868;
+	
+}
+.periphery_02 {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #BEBEBE;
+	background-color: #FAFCFB;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+	color: #FF9900;
+}
+.periphery_03 {
+border-right-width: 1px;
+border-right-style: solid;
+border-right-color: #CCCCCC;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #BEBEBE;
+	color: #686868;
+}
+.periphery_04{
+	background-color: #FAFCFB;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #BEBEBE;
+	color: #686868;
+}
+
+.review_01 {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #BEBEBE;
+}
+
+.font_05 {
+	font-size: 13px;
+	color: #666666;
+}
+.font_06 {
+	color: #999999;
+}
+.ranking{
+position:absolute; left:907px; top:85px; width:222px; height:555px; z-index:3;
+}
+.item_07 {
+	background-image: url(../img/listView/bluenavi.gif);
+	
+	
+}
+.fontColor_05 {
+	color:#0066A0;
+	font-weight:bold;
+}
+.gallery_02 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ECE9D8;
+}
+
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.fontColor_06 {
+	font-size: 13px;
+	color: #000000;
+}
+.item_08 {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #BEBEBE;
+	border-left-color: #FFFFFF;
+}
+.periphery_05 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #BEBEBE;
+	color:#686868;
+
+}
+.periphery_06 {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #BEBEBE;
+	border-left-color: #BEBEBE;
+}
+.periphery_07 {
+	border: 1px solid #BEBEBE;
+}
+.periphery_08 {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #BEBEBE;
+}
+.periphery_09 {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #BEBEBE;
+}
+
+.periphery_10 {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #BEBEBE;
+	border-bottom-color: #BEBEBE;
+	border-left-color: #BEBEBE;
+}
+.ranking_01 {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #BEBEBE;
+	border-bottom-color: #BEBEBE;
+	border-left-color: #BEBEBE;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #bebebe;
+}
+.unnamed2 {
+	font-size: 14px;
+	line-height:2px;
+}

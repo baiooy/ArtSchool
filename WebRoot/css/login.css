@@ -1,0 +1,30 @@
+.backdrop_01 {
+	line-height:25px;
+}
+.font_01{
+	font-size: 13px;
+	
+}
+.font_02{
+color:#FF6600
+	
+}
+.font_03 {
+	color:#686868;
+	font-size:13px;
+}
+.dashedLine {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #DEDEDE;
+}
+.font_04 {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+}
+.style2{
+	color: #FF0000;
+	font-size:12px;
+}
+

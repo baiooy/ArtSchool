@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="MaterialForm" type="com.wxsafe.ccy.form.MaterialForm" />
+		<form-bean name="DoForm" type="com.wxsafe.ccy.form.DoForm" />
+		<form-bean name="UserForm" type="com.wxsafe.ccy.form.UserForm" />
+		<form-bean name="LoginForm" type="com.wxsafe.ccy.form.LoginForm" />
+		<form-bean name="TypeForm" type="com.wxsafe.ccy.form.TypeForm" />
+		<form-bean name="SelectForm" type="com.wxsafe.ccy.form.SelectForm" />
+		<form-bean name="AdminForm" type="com.wxsafe.ccy.form.AdminForm" />
+		<form-bean name="NavigateForm" type="com.wxsafe.ccy.form.NavigateForm" />
+		<form-bean name="SortLevelForm" type="com.wxsafe.ccy.form.SortLevelForm" />
+		<form-bean name="DetailForm" type="com.wxsafe.ccy.form.DetaiForm" />
+		<form-bean name="ReviewForm" type="com.wxsafe.ccy.form.ReviewForm" />
+		<form-bean name="ConfigForm" type="com.wxsafe.ccy.form.ConfigForm" />
+	</form-beans>
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+		<action path="/content" type="com.wxsafe.back.action.ContentAction">
+			<forward name="success" path="/jsp/back/dtree.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action path="/viewMa" type="com.wxsafe.back.action.ViewMaAction">
+			<forward name="success" path="/jsp/back/material/viewMa.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action path="/readyMa" type="com.wxsafe.back.action.ReadyMaAction"
+			scope="session">
+			<forward name="ready" path="/jsp/back/material/readyMa.jsp" />
+			<forward name="success" path="/error.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action path="/viewType" type="com.wxsafe.back.action.ViewTypeAction">
+			<forward name="success" path="/jsp/back/type/viewType.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="MaterialForm" name="MaterialForm" path="/saveMa"
+			scope="request" type="com.wxsafe.back.action.SaveMaAction">
+			<forward name="success" path="/jsp/back/tempForward.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="DoForm" name="DoForm" path="/deleteMa"
+			scope="request" type="com.wxsafe.back.action.DeleteMaAction">
+			<forward name="success" path="/viewType.do" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="LoginForm" name="LoginForm" path="/backLogin"
+			validate="true" input="/backLogin.jsp" scope="request"
+			type="com.wxsafe.back.action.BackLoginAction">
+			<forward name="success" path="/jsp/back/backIndex.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action path="/download" type="com.wxsafe.back.action.Download">
+			<forward name="fail" path="/index.jsp" />
+		</action>
+		<action path="/deleteType" type="com.wxsafe.back.action.DeleteTypeAction">
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="TypeForm" name="TypeForm" path="/saveType"
+			scope="request" type="com.wxsafe.back.action.SaveTypeAction"
+			validate="false">
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="SelectForm" name="SelectForm" path="/selectMa"
+			scope="request" type="com.wxsafe.back.action.SelectMaAction">
+			<forward name="fail" path="/error.jsp" />
+			<forward name="success" path="/jsp/back/material/selectMa.jsp" />
+		</action>
+		<action path="/listAdmin" type="com.wxsafe.back.action.ListAdminAction">
+			<forward name="success" path="/jsp/back/admin/listAdmin.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="AdminForm" name="AdminForm" path="/updateAdmin"
+			scope="request" type="com.wxsafe.back.action.UpdateAction">
+			<forward name="success" path="/listAdmin.do" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="DoForm" name="DoForm" path="/changeRecommend"
+			scope="request" type="com.wxsafe.back.action.ChangeRecommendAction">
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="SelectForm" name="SelectForm" path="/selectUser"
+			scope="request" type="com.wxsafe.back.action.SelectUserAction">
+			<forward name="success" path="/jsp/back/user/selectUser.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="DoForm" name="DoForm" path="/deleteUser"
+			scope="request" type="com.wxsafe.back.action.DeleteUserAction">
+			<forward name="success" path="/jsp/back/user/selectUser.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action path="/viewUser" type="com.wxsafe.back.action.ViewUserAction">
+			<forward name="success" path="/jsp/back/user/viewUser.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="LoginForm" name="LoginForm" path="/testLogin"
+			scope="request" type="com.wxsafe.ccy.action.TestLoginAction"
+			validate="false">
+			<forward name="success" path="/jsp/test/backLogin.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="NavigateForm" name="NavigateForm" path="/navigate"
+			scope="request" type="com.wxsafe.front.action.NavigateAction">
+			<forward name="success" path="/jsp/front/navigate.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="LoginForm" name="LoginForm" path="/login"
+			scope="request" type="com.wxsafe.front.action.LoginAction">
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action path="/quit" type="com.wxsafe.front.action.QuitAction">
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="SortLevelForm" name="SortLevelForm" path="/sortLevel"
+			scope="request" type="com.wxsafe.front.action.SortLevelAction">
+			<forward name="success" path="/jsp/front/sortlevel.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="DetailForm" name="DetailForm" path="/detail"
+			scope="request" type="com.wxsafe.front.action.DetailAction">
+			<forward name="success" path="/jsp/front/detail.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="ReviewForm" name="ReviewForm" path="/sendReview"
+			scope="request" type="com.wxsafe.front.action.SendReviewAaction">
+			<forward name="fail" path="/error.jsp" />
+			<forward name="success" path="/jsp/front/tempForward.jsp" />
+		</action>
+		<action attribute="UserForm" name="UserForm" path="/regist"
+			scope="request" type="com.wxsafe.front.action.RegistAction" validate="false">
+			<forward name="success" path="/jsp/front/regist_success.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="ConfigForm" name="ConfigForm" path="/updatePicUrl"
+			scope="request" type="com.wxsafe.back.action.UpdatePicUrlAction">
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="UserForm" name="UserForm" path="/findPass"
+			scope="request" type="com.wxsafe.front.action.FrindPassAction">
+			<forward name="success" path="/jsp/front/getUserPass.jsp" />
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="ReviewForm" name="ReviewForm" path="/deleteRe"
+			scope="request" type="com.wxsafe.front.action.DeleteReviewAction">
+			<forward name="fail" path="/error.jsp" />
+		</action>
+		<action attribute="ConfigForm" name="ConfigForm" path="/updateStrConfig"
+			scope="request" type="com.wxsafe.back.action.UpdateStrConfigAction"
+			validate="false" />
+	</action-mappings>
+	<message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+</struts-config>

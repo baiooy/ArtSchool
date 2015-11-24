@@ -1,0 +1,96 @@
+@CHARSET "UTF-8";
+BODY {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px; 
+	BACKGROUND: #FFFFFF; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 	
+	COLOR: #FFFFFF; 
+	PADDING-TOP: 0px;
+       CellPadding:0px;
+	CellSpacing:0px;
+	
+}
+DIV {
+	BORDER-TOP-WIDTH: 0px; 
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-BOTTOM-WIDTH: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 
+	PADDING-TOP: 0px; 
+	BORDER-RIGHT-WIDTH: 0px
+}
+FORM {
+	BORDER-TOP-WIDTH: 0px; 
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	BORDER-LEFT-WIDTH: 0px; 
+	BORDER-BOTTOM-WIDTH: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 
+	PADDING-TOP: 0px; 
+	BORDER-RIGHT-WIDTH: 0px
+}
+#head{
+   background-color:#CCCCCC;
+	}
+
+
+#mid {
+	background-image:url(../img/index.gif);
+	
+}
+#und {
+	 background-color:#CCCCCC;  
+    }
+#heading{
+    margin-left:10px;
+	margin-top:20px;
+	width:300px;
+	}
+.chanaHead {
+	font-family: "宋体";
+	font-size: 36px;
+	font-weight: bold;
+	color: #990000;
+}
+.engHead {
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color:#CCCCCC;
+}
+#myself {
+	font-family: Arial;
+	font-size: 14px;
+	color:#FFFFFF;
+	height: 20px;
+	margin-right: 5px;
+	margin-top:7px;
+}
+#myself a{
+    color:#FFFFFF;
+	text-decoration:none;
+	}
+#navi {
+    font-family: Arial;
+	font-size: 14px;
+	color: #FFFFFF;
+	height: 14px;
+	margin-top:175px;
+	margin-left: 40px;
+    }
+#navi a{
+	font-size:14px;
+    color:#FFFFFF;
+	text-decoration:none;
+}
+#message{
+    font-size:14px; 
+    padding-top:150px;
+    color:#666666; 
+    font-weight:bold;  
+    }

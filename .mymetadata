@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ArtSchool"
+  id="myeclipse.1237783593406"
+  context-root="/ArtSchool"
+  j2ee-spec="5.0"
+  archive="ArtSchool.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

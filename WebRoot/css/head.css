@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+
+.chanaHead{
+          font:"宋体";
+		  font-size:36px;
+		  font-weight: bold;
+	      color:#996666;
+		  left:15%;
+		  }
+.engHead{
+          font-family: Arial;
+	      font-size: 9px;
+	      font-weight: bold;
+	      text-transform: uppercase;
+	      color:#FF9900;
+		  }
+.channel{
+         padding:0px;
+		 color:#FFFFFF;
+		 font-size:12px;
+		 margin-top:0px;
+		 }
+.channel a{
+            text-decoration:none;
+			color:#0033FF;
+			}
+.font_01 {
+		font-size:13px;
+		color:#FFFFFF;
+	}
+
+
+.select{
+        color:#000000;
+		font-size:12px;
+		width:75px;
+		height:22px;
+		}
+.text{
+       width:260px;
+	   font-size:12px;
+	   color:#000000;
+	   }
+
+.font_02 {
+		font-size:13px;
+		}
+	

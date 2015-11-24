@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-config>
+	<drive-name>com.mysql.jdbc.Driver</drive-name>
+	<url>jdbc:mysql://localhost:3306/art</url>
+	<user>root</user>
+	<password>123</password>
+</data-config>
